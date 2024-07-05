@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#6C5FA7;
+}
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #6B3779;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.logo{
+  font-family:'Times New Roman', Times, serif;
+}
+
+  .navbar .logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FAB573;
+    margin-left: 12px;
+  }
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid black;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #FAB573;
+  padding: 8px 16px;
+}
+
+.menu-links a:hover {
+    color: white;
+  }
+
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #FAB573;
+  border-radius: 10px;
+  border: 2px solid #B24968;
+  transition: 0.2s;
+}
+.log-in:hover {
+  background-color: #B24968;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 53rem) {
+    .menu {
+      display: none;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+
+
+
+ 
